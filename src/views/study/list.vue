@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-    welcome vvsungho's git blog
+    알고리즘 스터디 목록
   </div>
 </template>
 
 <script>
 export default {
-  name: 'main'
+  name: 'list'
 }
 </script>
 

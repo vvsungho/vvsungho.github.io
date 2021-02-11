@@ -12,9 +12,21 @@ export const constantRouterMap = [
         meta: { title: '메인' },
         children: [
             {
-                path: '/main',
+                path: '/',
                 component: () => import('@/views/main'),
-                name: '메인',
+                name: 'main',
+                meta: { title: '메인' }
+            },
+            {
+                path: '/about',
+                component: () => import('@/views/about'),
+                name: 'about',
+                meta: { title: 'about' }
+            },
+            {
+                path: '/study/list',
+                component: () => import('@/views/study/list'),
+                name: 'studyList',
                 meta: { title: '메인' }
             }
         ],

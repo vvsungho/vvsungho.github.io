@@ -7,3 +7,24 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import '../../node_modules/bootstrap-vue/src/index.scss';
 @import '../../node_modules/vue-bootstrap-sidebar/src/scss/default-theme';
+
+.container {
+  margin-top: 10px !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-b-1rem {
+  margin-bottom: 1.0rem;
+}
+
