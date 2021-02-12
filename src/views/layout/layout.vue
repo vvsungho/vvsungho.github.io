@@ -1,15 +1,15 @@
 <template>
   <div>
-    <sidebar />
+<!--    <sidebar />-->
   </div>
 </template>
 
 <script>
-import sidebar from '@/views/layout/sidebar/sidebar'
+// import sidebar from '@/views/layout/sidebar/sidebar'
 export default {
   name: 'layout',
   components: {
-    sidebar
+    // sidebar
   }
 }
 </script>

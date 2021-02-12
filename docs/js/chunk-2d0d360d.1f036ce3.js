@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0d360d"],{"5d08":function(n,t,e){"use strict";e.r(t);var a=function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("div",{staticClass:"container"},[n._v(" 알고리즘 스터디 목록 ")])},s=[],c={name:"list"},i=c,l=e("2877"),r=Object(l["a"])(i,a,s,!1,null,"3615184a",null);t["default"]=r.exports}}]);
-//# sourceMappingURL=chunk-2d0d360d.1f036ce3.js.map

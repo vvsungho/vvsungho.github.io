@@ -1,26 +1,26 @@
 <template>
-  <div class="container">
+  <div>
+    <navbar />
     <b-card
-        title="About"
+        img-top
         tag="article"
-        class="mb-2 text-left"
+        style="min-width: 20rem; width: 100%; border: none;"
+        class="mb-2 text-center"
     >
-      <div class="margin-b-1rem">
-        <img src="../assets/profile2.jpeg" style="width: 200px">
-      </div>
+      <b-card-title>About</b-card-title>
+      <img data-v-e7ab893a="" src="../assets/profile2.jpeg" alt="Image" class="card-img-top" style="width: 300px">
       <b-card-text>
-        * 윤성호
-      </b-card-text>
-      <b-card-text>
-        * vvsungho@gmail.com
+        윤성호
       </b-card-text>
     </b-card>
   </div>
 </template>
 
 <script>
+import navbar from '@/views/layout/navbar/navbar'
 export default {
-  name: 'about'
+  name: 'about',
+  components: { navbar }
 }
 </script>
 

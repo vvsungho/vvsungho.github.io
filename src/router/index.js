@@ -8,29 +8,27 @@ Vue.use(Router)
 export const constantRouterMap = [
     {
         path: '/',
-        component: layout,
-        meta: { title: '메인' },
-        children: [
-            {
-                path: '/',
-                component: () => import('@/views/main'),
-                name: 'main',
-                meta: { title: '메인' }
-            },
-            {
-                path: '/about',
-                component: () => import('@/views/about'),
-                name: 'about',
-                meta: { title: 'about' }
-            },
-            {
-                path: '/study/list',
-                component: () => import('@/views/study/list'),
-                name: 'studyList',
-                meta: { title: '메인' }
-            }
-        ],
-        hidden: true
+        component: () => import('@/views/home'),
+        name: 'home',
+        meta: { title: '메인' }
+    },
+    {
+        path: '/about',
+        component: () => import('@/views/about'),
+        name: 'about',
+        meta: { title: 'about' }
+    },
+    {
+        path: '/posts',
+        component: () => import('@/views/post/posts'),
+        name: 'posts',
+        meta: { title: '게시글' }
+    },
+    {
+        path: '/post/:key',
+        component: () => import('@/views/post/detail'),
+        name: 'postDetail',
+        meta: { title: '게시' }
     }
 ]
 
@@ -47,7 +45,7 @@ export const asyncRouterMap = [
         children: [
             {
                 path: '/',
-                component: () => import('@/views/main'),
+                component: () => import('@/views/home'),
                 name: '메인',
                 meta: { title: '메인' }
             }
