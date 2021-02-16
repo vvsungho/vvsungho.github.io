@@ -8,12 +8,17 @@
           tag="article"
           class="mb-2 item"
       >
-        <b-card-title @click="goDetail(item.key)" style="cursor: pointer">
-          {{ item.title }}
+        <b-card-title @click="goDetail(item.key)" style="cursor: pointer; margin: 0">
+          <div>
+            <b-card-sub-title class="text-center" style="padding-bottom: 10px">
+              <b-badge v-for="(tag, index) in item.tags" :key="index" variant="primary" style="margin-right: 5px">
+                {{ tag }}
+              </b-badge>
+            </b-card-sub-title>
+            {{ item.title }}
+          </div>
         </b-card-title>
-        <b-card-text>
-          {{ item.content }}
-        </b-card-text>
+        <!--        <b-card-text v-html="item.content" class="text-left text-hidden"/>-->
       </b-card>
     </div>
   </div>
@@ -43,6 +48,11 @@ export default {
     width: 100%;
     border: none;
     border-bottom: 1px solid #ebebeb;
-    padding-bottom: 2.5rem;
+    //padding-bottom: 2.5rem;
+  }
+  .text-hidden {
+    //max-height: 200px;
+    white-space: nowrap;
+    overflow: hidden;
   }
 </style>

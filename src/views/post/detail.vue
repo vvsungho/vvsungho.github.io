@@ -10,17 +10,17 @@
           <b-badge
             v-for="(tag, index) in item.tags"
             :key="index"
-            type="secondary"
+            variant="primary"
             class="margin-r-5"
           >
             {{ tag }}
           </b-badge>
         </b-card-text>
         <b-card-title class="title" style="cursor: pointer">
-          {{ item.title }}
+          <h2>{{ item.title }}</h2>
         </b-card-title>
         <b-card-text>
-          {{ item.content }}
+          <div v-html="item.content" />
         </b-card-text>
       </b-card>
     </div>
@@ -69,5 +69,10 @@ export default {
       padding-bottom: 10px;
       border-bottom: 1px solid #ebebeb;
     }
+  }
+</style>
+<style>
+  li {
+    line-height: 200% !important;
   }
 </style>
