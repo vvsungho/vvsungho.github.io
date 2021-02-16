@@ -1,4 +1,4 @@
-# blog
+# vue 사용
 
 ## Project setup
 ```
