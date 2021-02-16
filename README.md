@@ -1,4 +1,4 @@
-# vue 사용
+# Vue.js 사용
 
 ## Project setup
 ```
