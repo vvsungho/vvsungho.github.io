@@ -1,7 +1,8 @@
 <template>
   <div>
-    <b-navbar type="dark" variant="dark">
+    <b-navbar type="dark" variant="dark" class="fixed-header">
       <b-navbar-nav>
+        <b-nav-item><img src="@/assets/profile2.jpeg" alt="" style="width: 30px; border-radius: 50%" @click="movePage('about')"></b-nav-item>
         <b-nav-item :class="checkActiveMenu === 'home' ? 'font-weight-bold': ''" @click="movePage('home')">Home</b-nav-item>
         <b-nav-item :class="checkActiveMenu === 'about' ? 'font-weight-bold': ''" @click="movePage('about')">About</b-nav-item>
         <b-nav-item :class="checkActiveMenu === 'posts' || checkActiveMenu === 'postDetail' ? 'font-weight-bold': ''" @click="movePage('posts')">Posts</b-nav-item>
@@ -39,5 +40,17 @@ export default {
       font-weight: bold !important;
       color: #ffffff !important;
     }
+  }
+  .fixed-header {
+    //position:fixed;
+    height: 64px;
+    //width:100%;
+    //margin-bottom: 64px !important;
+    //top:0;
+    //left:0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    //margin-bottom: 64px;
   }
 </style>

@@ -10,8 +10,9 @@
           <b-badge
             v-for="(tag, index) in item.tags"
             :key="index"
-            variant="primary"
+            variant="secondary"
             class="margin-r-5"
+            style="font-size: 15px; padding: 9px 12px"
           >
             {{ tag }}
           </b-badge>

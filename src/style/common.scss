@@ -9,7 +9,9 @@
 @import '../../node_modules/vue-bootstrap-sidebar/src/scss/default-theme';
 
 .container {
-  margin-top: 10px !important;
+  //margin-top: 10px !important;
+  position: relative;
+  padding-top: 64px;
 }
 
 .text-left {

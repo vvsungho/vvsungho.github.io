@@ -1,9 +1,20 @@
 <template>
   <div>
     <navbar />
-    <div class="container">
+    <div class="container" style="margin-bottom: 20px">
       <b-card
-          v-for="(item, index) in items"
+          tag="article"
+          class="mb-2 item"
+      >
+        <b-card-title style="font-size: 30px">Posts</b-card-title>
+        <b-card-bady>
+          <b-badge v-for="(tag, index) in tags" :key="index" variant="secondary" style="margin: 10px; font-size: 20px; padding: 12px 20px; cursor: pointer" @click="doTagSearch(tag)">
+            {{ tag }}
+          </b-badge>
+        </b-card-bady>
+      </b-card>
+      <b-card
+          v-for="(item, index) in viewItems"
           :key="index"
           tag="article"
           class="mb-2 item"
@@ -11,7 +22,7 @@
         <b-card-title @click="goDetail(item.key)" style="cursor: pointer; margin: 0">
           <div>
             <b-card-sub-title class="text-center" style="padding-bottom: 10px">
-              <b-badge v-for="(tag, index) in item.tags" :key="index" variant="primary" style="margin-right: 5px">
+              <b-badge v-for="(tag, index) in item.tags" :key="index" variant="secondary" style="margin-right: 5px; font-size: 13px; padding: 6px 10px">
                 {{ tag }}
               </b-badge>
             </b-card-sub-title>

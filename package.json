@@ -17,6 +17,7 @@
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
+    "node-lambda": "^0.17.0",
     "node-sass": "^5.0.0",
     "sass-loader": "^10.0.1",
     "tui-editor": "^1.4.10",
