@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import md1 from '@/assets/md/테스트 중 입니다.md'
 export default {
   name: "md",
   components: {
@@ -13,8 +12,7 @@ export default {
   data () {
     return {
       fileName: this.$route.params.key,
-      md: null,
-      md1: md1,
+      md: null
     }
   },
   created() {
