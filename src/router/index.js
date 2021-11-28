@@ -19,9 +19,9 @@ export const constantRouterMap = [
         meta: { title: 'about' }
     },
     {
-        path: '/posts',
-        component: () => import('@/views/post/posts'),
-        name: 'posts',
+        path: '/post',
+        component: () => import('@/views/post/list'),
+        name: 'postList',
         meta: { title: '게시글' }
     },
     {
