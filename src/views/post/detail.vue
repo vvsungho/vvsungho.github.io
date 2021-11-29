@@ -2,29 +2,7 @@
   <div>
     <navbar />
     <div class="container">
-      <!--      <b-card-->
-      <!--          tag="article"-->
-      <!--          class="mb-2 item"-->
-      <!--      >-->
-      <!--        <b-card-text v-if="item.tags.length > 0">-->
-      <!--          <b-badge-->
-      <!--            v-for="(tag, index) in item.tags"-->
-      <!--            :key="index"-->
-      <!--            variant="secondary"-->
-      <!--            class="margin-r-5"-->
-      <!--            style="font-size: 15px; padding: 9px 12px"-->
-      <!--          >-->
-      <!--            {{ tag }}-->
-      <!--          </b-badge>-->
-      <!--        </b-card-text>-->
-      <!--        <b-card-title class="title" style="cursor: pointer">-->
-      <!--          <h2>{{ item.title }}</h2>-->
-      <!--        </b-card-title>-->
-      <!--        <b-card-text>-->
-      <!--          <div v-html="item.content" />-->
-      <!--        </b-card-text>-->
-      <!--      </b-card>-->
-      <md></md>
+      <md :md="item"></md>
     </div>
   </div>
 </template>
