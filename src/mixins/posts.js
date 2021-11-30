@@ -8,6 +8,13 @@ const postsMixin = {
                     tags: ['JAVA', 'JPA'],
                     title: 'JPA 시작하기',
                     content: require('../assets/md/jpa/start_jpa.md').default
+                },
+                {
+                    key: '2',
+                    sort: 2,
+                    tags: ['JAVA'],
+                    title: 'JAVA substring',
+                    content: require('../assets/md/java/substring.md').default
                 }
             ],
             viewItems: [],

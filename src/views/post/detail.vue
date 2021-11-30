@@ -56,4 +56,8 @@ export default {
   li {
     line-height: 200% !important;
   }
+  pre {
+    background-color: #e1e1e3;
+    padding: 1rem;
+  }
 </style>
