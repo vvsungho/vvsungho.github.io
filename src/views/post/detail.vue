@@ -56,8 +56,13 @@ export default {
   li {
     line-height: 200% !important;
   }
+
   pre {
-    background-color: #e1e1e3;
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1rem; /* 2 */
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(34, 85, 51, 0.87);
+    white-space: pre-wrap;
     padding: 1rem;
   }
 </style>

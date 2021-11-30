@@ -15,6 +15,13 @@ const postsMixin = {
                     tags: ['JAVA'],
                     title: 'JAVA substring',
                     content: require('../assets/md/java/substring.md').default
+                },
+                {
+                    key: '3',
+                    sort: 2,
+                    tags: ['JAVA'],
+                    title: 'JAVA indexOf',
+                    content: require('../assets/md/java/inderOf.md').default
                 }
             ],
             viewItems: [],

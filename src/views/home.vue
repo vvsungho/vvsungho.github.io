@@ -4,7 +4,7 @@
     <div class="container">
       <b-card class="recent-posts">
         <b-card-title>
-          <span class="border-bottom" style="font-size: 30px">Recent Posts</span>
+          <span class="border-bottom" style="font-size: 30px">최근 포스트</span>
         </b-card-title>
         <b-card
             v-for="(item, index) in items.slice(0, 5)"
