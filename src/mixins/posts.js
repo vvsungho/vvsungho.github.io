@@ -5,7 +5,7 @@ const postsMixin = {
                 {
                     key: '1',
                     sort: 1,
-                    tags: ['JAVA', 'JPA'],
+                    tags: ['JPA'],
                     title: 'JPA 시작하기',
                     content: require('../assets/md/jpa/start_jpa.md').default
                 },
@@ -50,6 +50,13 @@ const postsMixin = {
                     tags: ['JAVA'],
                     title: 'JAVA Character',
                     content: require('../assets/md/java/Character.md').default
+                },
+                {
+                    key: '8',
+                    sort: 8,
+                    tags: ['알고리즘'],
+                    title: '특정문자 뒤집기',
+                    content: require('../assets/md/algorithm/inflearn/reverse_text.md').default
                 }
             ],
             viewItems: [],
