@@ -29,6 +29,27 @@ const postsMixin = {
                     tags: ['JPA'],
                     title: 'JPA 공부 기록 2021-11-30',
                     content: require('../assets/md/jpa/memo1.md').default
+                },
+                {
+                    key: '5',
+                    sort: 5,
+                    tags: ['JAVA'],
+                    title: 'JAVA StringBuilder',
+                    content: require('../assets/md/java/Stringbuilder.md').default
+                },
+                {
+                    key: '6',
+                    sort: 6,
+                    tags: ['JAVA'],
+                    title: 'JAVA Scanner',
+                    content: require('../assets/md/java/Scanner.md').default
+                },
+                {
+                    key: '7',
+                    sort: 7,
+                    tags: ['JAVA'],
+                    title: 'JAVA Character',
+                    content: require('../assets/md/java/Character.md').default
                 }
             ],
             viewItems: [],
