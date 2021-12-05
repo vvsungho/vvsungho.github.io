@@ -18,10 +18,17 @@ const postsMixin = {
                 },
                 {
                     key: '3',
-                    sort: 2,
+                    sort: 3,
                     tags: ['JAVA'],
                     title: 'JAVA indexOf',
                     content: require('../assets/md/java/inderOf.md').default
+                },
+                {
+                    key: '4',
+                    sort: 4,
+                    tags: ['JPA'],
+                    title: 'JPA 공부 기록 2021-11-30',
+                    content: require('../assets/md/jpa/memo1.md').default
                 }
             ],
             viewItems: [],
@@ -35,7 +42,7 @@ const postsMixin = {
         postInit() {
             // 내림차순
             this.items = this.items.sort(function (a, b) {
-                return a.sort > b.sort ? -1 : a.sort < b.sort ? 1 : 0;
+                return a.sort > b.sort ? -1 : a.sort < b.sort ? 1 : 0
             })
 
             this.viewItems = this.items

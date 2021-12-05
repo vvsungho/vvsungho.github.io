@@ -1,18 +1,16 @@
 ##  📢 시작하기
 
 ---
-##### JAVA inderOf
+##### JAVA StringBuilder 함수
 ***
-* str.indexOf("F") "F"가 속한 index 반환, 없을 경우 -1 반환
+* reverse(str) => str을 뒤집어 저장.
 
 
 ```java
-String str = "ABCDEFG"
+String str = "ABCDEFG";
+StringBuilder sb = new StringBuilder();
 
-System.out.println(str.indexOf("F")) 
-// 결과값: 5
-
-System.out.println(str.indexOf("Z")) 
-// 결과값: -1
+System.out.println(sb.reverse(str));
+// 결과값: GFEDCBA
 ```
 
