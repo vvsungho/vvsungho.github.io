@@ -57,6 +57,13 @@ const postsMixin = {
                     tags: ['알고리즘'],
                     title: '특정문자 뒤집기',
                     content: require('../assets/md/algorithm/inflearn/reverse_text.md').default
+                },
+                {
+                    key: '9',
+                    sort: 9,
+                    tags: ['알고리즘'],
+                    title: '삼각형 별찍기..',
+                    content: require('../assets/md/algorithm/study/Chap01_Q15.md').default
                 }
             ],
             viewItems: [],
