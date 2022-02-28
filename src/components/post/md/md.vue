@@ -1,13 +1,21 @@
 <template>
   <div class="md">
     <component v-if="md" :is="md.content"></component>
+    <highlight-code lang="java">
+      <component v-if="md" :is="md.content"></component>
+      public class main {
+        System.out.println("aaa");
+      }
+    </highlight-code>
   </div>
 </template>
 
 <script>
+// import { component as VueCodeHighlight } from 'vue-code-highlight'
 export default {
   name: "md",
   components: {
+    // VueCodeHighlight
   },
   props: {
     md: {

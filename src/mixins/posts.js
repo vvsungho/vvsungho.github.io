@@ -62,8 +62,15 @@ const postsMixin = {
                     key: '9',
                     sort: 9,
                     tags: ['알고리즘'],
-                    title: '삼각형 별찍기..',
+                    title: '직각 삼각형 별찍기..',
                     content: require('../assets/md/algorithm/study/Chap01_Q15.md').default
+                },
+                {
+                    key: '10',
+                    sort: 10,
+                    tags: ['알고리즘'],
+                    title: '피라미드 삼각형 별찍기..',
+                    content: require('../assets/md/algorithm/study/Chap01_Q16.md').default
                 }
             ],
             viewItems: [],

@@ -30,7 +30,7 @@
         }
     }
 ```
-
+<br/><br/>
 
 ``` java
     /**
@@ -46,13 +46,11 @@
     }
 ```
 
-<img src="./img/triangle2.png" width="300" height="300">
-
+<img src="./img/triangle2.png" width="250" height="250">
+<br/>
 i, j에서 i가 j보다 작거나 같을 때 출력되는 패턴.
 위 조건 충족할 시 '*' 출력.
-
-
-
+<br/><br/><br/>
 
 ``` java
     /**
@@ -73,7 +71,8 @@ i, j에서 i가 j보다 작거나 같을 때 출력되는 패턴.
         }
     }
 ```
-<img src="./img/triangle1.png" width="300" height="300">
-
+<img src="./img/triangle1.png" width="250" height="250">  
+<br/>
 i, j에서 i+j의 값이 n보다 클 경우 출력되는 패턴
 위 조건 충족할 시 '*' 출력.
+<br/><br/><br/>

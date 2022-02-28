@@ -37,7 +37,6 @@ export default {
   }
 }
 </script>
-
 <style lang="scss" scoped>
   .item {
     min-width: 20rem;
@@ -56,13 +55,10 @@ export default {
   li {
     line-height: 200% !important;
   }
-
   pre {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1rem; /* 2 */
-    background: rgba(0, 0, 0, 0.05);
-    color: rgba(34, 85, 51, 0.87);
-    white-space: pre-wrap;
-    padding: 1rem;
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #F0F0F0;
   }
 </style>
