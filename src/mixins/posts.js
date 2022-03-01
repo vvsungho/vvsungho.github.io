@@ -71,6 +71,13 @@ const postsMixin = {
                     tags: ['알고리즘'],
                     title: '피라미드 삼각형 별찍기..',
                     content: require('../assets/md/algorithm/study/Chap01_Q16.md').default
+                },
+                {
+                    key: '11',
+                    sort: 11,
+                    tags: ['JAVA'],
+                    title: '[Java]자바 진수변환(10진수->2진수,8진수,16진수)',
+                    content: require('../assets/md/java/ConvetBinary.md').default
                 }
             ],
             viewItems: [],
