@@ -6,7 +6,7 @@
           tag="article"
           class="mb-2 item"
       >
-        <b-card-title style="font-size: 30px">Posts</b-card-title>
+        <b-card-title style="font-size: 30px">Post</b-card-title>
         <b-card-body>
           <b-badge v-for="(tag, index) in tags" :key="index" variant="secondary" style="margin: 10px; font-size: 15px; padding: 12px 20px; cursor: pointer" @click="doTagSearch(tag)">
             {{ tag }}
