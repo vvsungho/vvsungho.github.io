@@ -13,6 +13,3 @@ StringBuilder sb = new StringBuilder();
 System.out.println(sb.reverse(str).toString());
 // 결과값: GFEDCBA
 ```
-
-
-g
