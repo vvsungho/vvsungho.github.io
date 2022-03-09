@@ -78,6 +78,13 @@ const postsMixin = {
                     tags: ['JAVA'],
                     title: '[Java]자바 진수변환(10진수->2진수,8진수,16진수)',
                     content: require('../assets/md/java/ConvetBinary.md').default
+                },
+                {
+                    key: '12',
+                    sort: 12,
+                    tags: ['JAVA', 'Spring'],
+                    title: 'Spring 복습 1일차',
+                    content: require('../assets/md/java/spring/spring_1day.md').default
                 }
             ],
             viewItems: [],

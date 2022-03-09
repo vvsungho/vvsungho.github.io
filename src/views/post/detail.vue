@@ -60,5 +60,6 @@ export default {
     overflow-x: auto;
     padding: 0.5em;
     background: #F0F0F0;
+    word-break: keep-all;
   }
 </style>
