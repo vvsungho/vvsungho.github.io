@@ -33,6 +33,27 @@ IoC는 제어의 역전을 의미합니다.
 **[[Spring] IoC 컨테이너 (Inversion of Control) 참고자료](https://dev-coco.tistory.com/80)**  
 <br/>
 
+⭐⭐
+#### <span style="color: green">**AOP (Aspect Oriented Programming)에 대해 설명해주세요.**</span>
+트랜잭션이나 로깅, 보안과 같이 공통적으로 사용하는 기능의 경우 해당 기능을 분리하여 관리할 수 있습니다.  
+**[[Spring] AoP (Aspect Oriented Programming) 참고자료](https://dev-coco.tistory.com/81)**  
+<br/>
+
+⭐⭐
+#### <span style="color: green">**Spring Container 생성 과정을 설명해주세요.**</span>
+애플리케이션이 실행되면 비어있는 스프링 컨테이너가 생성되고 스프링 설정 파일을 기반으로 컨테이너에 스프링 빈이 등록되고 스프링 빈의 의존관계가 주입됩니다.  
+<br/>
+
+⭐⭐
+#### <span style="color: green">**Spring MVC에 대해 설명해주세요.**</span>
+MVC는 Model, View, Controller의 약자이며, 각 계층간의 기능을 구분하는데 중점을 둔 디자인 패턴 입니다.  
+MVC패턴을 사용하는 이유는 비즈니스 로직과 UI 로직을 분리하여 유지보수를 독립적으로 수행할 수 있습니다.  
+Model과 View가 다른 컴포넌트들에 종속되지 않아 애플리케이션의 확장성, 유연성에 유리하고 중복코드를 제거할 수 있습니다.    
+Model은 <u>데이터 관리 및 비즈니스 로직을 처리하는 부분 입니다.</u>  (DAO, DTO, Service)  
+View는 <u>비즈니스 로직의 처리 결과를 통해 유저 인터페이스가 표현되는 구간 입니다.</u>  
+Controller는 <u>사용자의 요청을 처리하고 Model과 View를 중개하는 역할을 합니다.</u>  
+<br/>
+
 ⭐
 #### <span style="color: green">**라이브러리가 무엇일까요?**</span>
 자바에서 직접 제공하지 않고 외부에서 가져와 사용하는 것을 라이브러리라고 부릅니다.
@@ -45,9 +66,19 @@ IoC는 제어의 역전을 의미합니다.
 프로그램의 흐름을 제공하는 기본 틀을 말합니다.  
 <br/>
 
-⭐⭐
-#### <span style="color: green">**AOP (Aspect Oriented Programming)에 대해 설명해주세요.**</span>
-트랜잭션이나 로깅, 보안과 같이 공통적으로 사용하는 기능의 경우 해당 기능을 분리하여 관리할 수 있습니다.  
+⭐
+#### <span style="color: green">**싱글톤 패턴에 대해서 설명해주세요.**</span>
+싱글톤 패턴은 하나의 인스턴스만 생성하여 사용하는 디자인 패턴입니다.  
+스프링에서 bean 생성 시 별다른 설정이 없으면 default로 싱글톤이 적용됩니다.  
+요청이 들어올 때마다 매번 객체를 생성하지 않고, 이미 만들어진 객체를 공유하기 때문에 효율적인 사용이 가능합니다.  
+싱글톤 패턴으로 다음과 같은 장점을 얻을 수 있습니다.
+* static 메서드나 생성자 등을 사용하지 않아 객체지향적 개발을 할 수 있다.
+* 테스트하기가 편리하다.
+<br/>
+
+⭐
+#### <span style="color: green">**Spring의 스코프 프로토타입 빈에 대해 설명해주세요.**</span>
+프로토타입 빈은 싱글톤빈과는 달리 컨테이너에게 빈을 요청할 때마다 매번 새로운 객체를 생성하여 반환해줍니다.  
 <br/>
 
 ⭐
@@ -59,13 +90,15 @@ IoC는 제어의 역전을 의미합니다.
 핵심은 특정 기술에 종속되는 어떤 클래스도 상속하지 않고 있고, 어떠한 인터페이스도 구현하고 있지 않은 자바 클래스입니다.  
 <br/>
 
-⭐⭐
-#### <span style="color: green">**Spring Container 생성 과정을 설명해주세요.**</span>
-애플리케이션이 실행되면 비어있는 스프링 컨테이너가 생성되고 스프링 설정 파일을 기반으로 컨테이너에 스프링 빈이 등록되고 스프링 빈의 의존관계가 주입됩니다.  
-<br/> 
+⭐
+#### <span style="color: green">**서블릿에 대해서 설명해주세요.**</span>
+서블릿은 자바를 사용해 웹을 만들기 위해 필요한 기술 입니다.  
+클라이언트의 요청을 처리하고, 그 결과를 반환하는 Servlet 클래스의 구현 규칙을 지킨 자바 웹 프로그래밍 기술 입니다.
+Spring MVC에서 Controller로 이용되며, 사용자의 요청을 받아 처리한 후에 결과를 반환합니다.  
+<br/>
 
 ⭐
-#### <span style="color: green">**Spirng, SpringBoot 차이를 설명해주세요.**</span>
+#### <span style="color: green">**Spring, SpringBoot 차이를 설명해주세요.**</span>
 가장 큰 차이점은 Auto Configuration의 차이인 것 같습니다. Spring은 프로젝트 초기에 다양한 환경설정을 해야 하지만,
 
 Spring Boot는 설정의 많은 부분을 자동화하여 사용자가 편하게 스프링을 활용할 수 있도록 돕습니다.
@@ -75,7 +108,8 @@ spring boot starter dependency만 추가해주면 설정은 끝나고, 내장된
 
 ⭐
 #### <span style="color: green">**WAS (Web Application Server)와 WS (Web Server)의 차이를 설명해주세요.**</span>
-WAS는 비즈니스 로직을 넣을 수 있고, 대표적으로 Tomcat, PHP, ASP 등이 있습니다. 반대로 WS는 비즈니스 로직을 넣을 수 없으며 Nginx, Apache 등이 있습니다.  
+WAS는 비즈니스 로직을 넣을 수 있고, 대표적으로 Tomcat, PHP, ASP 등이 있습니다.  
+반대로 WS는 비즈니스 로직을 넣을 수 없으며 Nginx, Apache 등이 있습니다.  
 <br/>
 
 ⭐
@@ -90,16 +124,19 @@ WAS는 비즈니스 로직을 넣을 수 있고, 대표적으로 Tomcat, PHP, AS
 값 변환이 아닌 값을 주입시키므로 변수들의 생성자나 getter, setter가 없으면 변수들이 저장되지 않습니다.  
 <br/>
 
+⭐
+#### <span style="color: green">**VO, BO, DAO, DTO에 대하여 설명해주세요.**</span>
+**DAO**(Data Access Object)는 DB 데이터에 접근하기 위한 객체를 말합니다. (Repository, Mapper)  
+**BO**(Business Object)는 여러 DAO를 활용해 비즈니스 로직을 처리하는 객체를 말합니다. (Service)  
+**DTO**(Data Transfer Object) 각 계층간의 데이터 교환을 위한 객체를 말합니다.  
+**VO**(Value Object) 실제 데이터만을 저장하는 객체를 말합니다.    
+**[[Spring] DTO, VO, Entity의 차이점 참고자료](https://dev-coco.tistory.com/87)**  
+<br/>
+
+
 #### <span style="color: red">**보충 필요 내용**</span>
-- AOP 구성요소 (filter 등등)
-- 싱글톤
-- 스프링 빈의 라이프사이클
-- Lombok
-- 서블릿
-- VO와 BO, DAO, DTO
-- 대용량 트래픽 장애 대응
-- 스코프 프로토 타입 빈
-- @Transaction 동작 원리
+- 스프링 빈 라이프 사이클 관리
+- MVC 패턴 흐름
 
 <br/>
 

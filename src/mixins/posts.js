@@ -99,6 +99,13 @@ const postsMixin = {
                     tags: ['JAVA', 'CS'],
                     title: '기술면접 질문 정리 - Java 기본',
                     content: require('../assets/md/java/basic/cs_java.md').default
+                },
+                {
+                    key: '15',
+                    sort: 15,
+                    tags: ['JAVA', 'JPA', 'CS'],
+                    title: '기술면접 질문 정리 - JPA',
+                    content: require('../assets/md/jpa/cs_jpa.md').default
                 }
             ],
             viewItems: [],
