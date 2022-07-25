@@ -4,7 +4,7 @@
       <b-navbar-nav>
         <b-nav-item><img src="@/assets/profile2.jpeg" alt="" style="width: 30px; border-radius: 50%" @click="movePage('about')"></b-nav-item>
         <b-nav-item :class="checkActiveMenu === 'home' ? 'font-weight-bold': ''" @click="movePage('home')">Home</b-nav-item>
-        <b-nav-item :class="checkActiveMenu === 'about' ? 'font-weight-bold': ''" @click="movePage('about')">About</b-nav-item>
+        <!--        <b-nav-item :class="checkActiveMenu === 'about' ? 'font-weight-bold': ''" @click="movePage('about')">About</b-nav-item>-->
         <b-nav-item :class="checkActiveMenu === 'posts' || checkActiveMenu === 'postDetail' ? 'font-weight-bold': ''" @click="movePage('postList')">Post</b-nav-item>
       </b-navbar-nav>
     </b-navbar>

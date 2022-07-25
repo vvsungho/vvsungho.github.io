@@ -31,5 +31,18 @@ export default {
   .md {
     padding-top: 15px;
     text-align: left;
+    font-family: Arial, Charcoal, sans-serif;
+    section {
+      p {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+</style>
+<style lang="scss">
+  .md {
+    p {
+      margin-bottom: 0.2rem !important;
+    }
   }
 </style>
