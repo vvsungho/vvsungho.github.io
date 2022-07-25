@@ -106,6 +106,13 @@ const postsMixin = {
                     tags: ['JAVA', 'JPA', 'CS'],
                     title: '기술면접 질문 정리 - JPA',
                     content: require('../assets/md/jpa/cs_jpa.md').default
+                },
+                {
+                    key: '16',
+                    sort: 16,
+                    tags: ['JAVA', 'Web', 'CS'],
+                    title: '기술면접 질문 정리 - Web',
+                    content: require('../assets/md/web/cs_web.md').default
                 }
             ],
             viewItems: [],
