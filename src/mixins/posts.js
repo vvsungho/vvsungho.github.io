@@ -92,6 +92,13 @@ const postsMixin = {
                     tags: ['JAVA', 'Spring', 'CS'],
                     title: '기술면접 질문 정리 - Spring',
                     content: require('../assets/md/java/spring/cs_spring.md').default
+                },
+                {
+                    key: '14',
+                    sort: 14,
+                    tags: ['JAVA', 'CS'],
+                    title: '기술면접 질문 정리 - Java 기본',
+                    content: require('../assets/md/java/basic/cs_java.md').default
                 }
             ],
             viewItems: [],
