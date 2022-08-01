@@ -1,12 +1,42 @@
 ## **기술 면접 정리 - Web**
 ---
 ⭐⭐
-#### <span style="color: green">**HTTP 프로토콜**</span>
-HTTP란 데이터를 주고 받기 위한 프로토콜이고, 서버/클라이언트 모델을 따릅니다.  
-HTTP는 상태 정보를 저장하지 않는 Stateless(무상태) 특징과 클라이언트의 요청에 맞는 응답을 보낸 후 연결을 끊는 Connectionlsee의 특징을 가지고 있습니다.  
-HTTP 장점은 통신간의 연결 상태 처리나 상태 정보를 관리할 필요가 없기 때문에 서버 디자인이 간단합니다.  
-HTTP 단점으로는 이전 통신의 정보를 모르기 때문에 매번 인증해주야 하며, 이를 해결하기 위해 쿠키나 세션을 사용해서 데이터를 처리합니다.  
+#### <span style="color: green">**REST API**</span>
+REST API는 웹상에서 사용되는 여러 리소스를 HTTP URL로 표현하고,  
+해당 리소스에 대한 행위를 HTTP Method로 정의하는 방식을 말합니다.  
+또한 RESTful 규약을 지켜서 개발하는 것을 REST API라고 합니다.  
+RESTful은 REST 아키텍처의 제약 조건을 준수하는 것을 말하며,
+API를 설계할 때 URL에 동사를 사용하지 않고 명사를 사용하는 등의 REST API 디자인 가이드가 있습니다.  
+규약에는 대표적으로 self-descriptive와 hateos가 있습니다.  
+</br>
+
+⭐⭐
+#### <span style="color: green">**API개발을 하면서 신경쓰는부분 (경험)**</span>
+REST API 디자인 가이드, self-descriptive, hateos 등을 준수해서 API 개발 시 고려했던 경험 얘기..
 <br/>
+
+⭐
+#### <span style="color: green">**HTTP Method**</span>
+**GET** : 서버로 부터 데이터를 취득  
+**POST** : 서버에 데이터를 추가, 작성  
+**PUT** : 서버의 데이터를 생성, 갱신  
+**DELETE** : 서버의 데이터를 삭제  
+**PATCH** : 서버 리소스의 일부분을 수정  
+**HEAD** : 서버 리소스의 헤더 (메타 데이터의 취득)  
+**OPTIONS** : 리소스가 지원하고 있는 메서드의 취득  
+**CONNECT** : 프록시 동작의 터널 접속을 변경
+<br/>
+
+⭐⭐
+#### <span style="color: green">PUT vs PATCH</span>
+비교 및 예시  
+</br>
+
+⭐⭐
+#### <span style="color: green">JSONPatch vs JSONMergePatch</span>
+JSONPatch 방식은 커맨드 방식으로 동작하고. op, path, value 3개의 항목으로 구성되어있습니다.
+**op**는 작업유형을 말합니다. (add, remove, replace, move, copy or test 중에 하나만 사용가능)
+</br>
 
 ⭐⭐
 #### <span style="color: green">**HTTP vs HTTPS**</span>

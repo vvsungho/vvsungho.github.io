@@ -113,6 +113,27 @@ const postsMixin = {
                     tags: ['JAVA', 'Web', 'CS'],
                     title: '기술면접 질문 정리 - Web',
                     content: require('../assets/md/web/cs_web.md').default
+                },
+                {
+                    key: '17',
+                    sort: 17,
+                    tags: ['JAVA', 'CS'],
+                    title: '기술면접 질문 정리 - 공통',
+                    content: require('../assets/md/common/cs_common.md').default
+                },
+                {
+                    key: '18',
+                    sort: 18,
+                    tags: ['JAVA', '자료구조', 'CS'],
+                    title: '기술면접 질문 정리 - 자료구조',
+                    content: require('../assets/md/common/cs_data_structure.md').default
+                },
+                {
+                    key: '19',
+                    sort: 19,
+                    tags: ['면접'],
+                    title: '백엔드 개발자 1차(기술) 면접 후기',
+                    content: require('../assets/md/interview/interview1.md').default
                 }
             ],
             viewItems: [],
